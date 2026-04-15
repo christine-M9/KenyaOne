@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenya One | Donate</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    <div class="nav-wrapper">
+
+      <a href="index.html" class="nav-logo">
+        <img src="./images/KO img.png" alt="Kenya One Logo">
+        <div class="logo-text">
+          <span class="logo-name">Kenya One</span>
+          <span class="logo-sub">Non Governmental Organisation</span>
+        </div>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-menu" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#programs">Focus</a></li>
+        <li><a href="index.html#impact">Impact</a></li>
+        <!-- <li><a href="gallery.html">Gallery</a></li> -->
+        <li><a href="events.html">Events</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="donate.html" class="donate-btn active-donate-btn">Donate</a>
+    </div>
+  </nav>
+
+  <section class="donate-hero">
+    <div class="donate-hero-overlay"></div>
+    <div class="container donate-hero-content">
+      <p class="donate-mini-title">SUPPORT KENYA ONE</p>
+      <h1>Give Hope. Change Lives.</h1>
+      <p>
+        Your generosity helps us continue mentorship, feeding programs,
+        outreach, and care for vulnerable children and families.
+      </p>
+    </div>
+  </section>
+
+  <section class="donate-page-section">
+    <div class="container donate-page-wrapper">
+
+      <div class="donate-page-heading">
+        <span class="section-label center">Make a Contribution</span>
+        <h2>Choose a giving option</h2>
+        <p>
+          Every gift, big or small, helps us extend compassion, encouragement,
+          and practical support to the communities we serve.
+        </p>
+      </div>
+
+      <div class="donate-methods">
+        <article class="donate-card">
+          <div class="donate-icon">
+            <i class="fab fa-paypal"></i>
+          </div>
+          <h3>PayPal</h3>
+          <p class="donate-description">
+            Support Divine Outreach securely through PayPal using the email below.
+          </p>
+
+          <div class="donate-detail-box">
+            <span class="donate-detail-label">PayPal Email</span>
+            <p id="paypalEmail">kenyaone@gmail.com</p>
+          </div>
+
+          <div class="donate-card-actions">
+            <a href="mailto:kenyaone@gmail.com" class="donate-action-btn">Use This Email</a>
+            <button class="copy-btn" data-copy="kenyaone@gmail.com">Copy</button>
+          </div>
+        </article>
+
+        <article class="donate-card">
+          <div class="donate-icon">
+            <i class="fas fa-mobile-screen-button"></i>
+          </div>
+          <h3>Sendwave</h3>
+          <p class="donate-description">
+            Send your contribution directly through Sendwave using the number below.
+          </p>
+
+          <div class="donate-detail-box">
+            <span class="donate-detail-label">Sendwave Number</span>
+            <p id="sendwaveNumber">+254 700000000</p>
+          </div>
+
+          <div class="donate-card-actions">
+            <a href="https://wa.me/254700000000" target="_blank" class="donate-action-btn">Contact on WhatsApp</a>
+            <button class="copy-btn" data-copy="+254700000000">Copy</button>
+          </div>
+        </article>
+
+        <article class="donate-card">
+  <div class="donate-icon">
+    <i class="fas fa-money-bill-wave"></i>
+  </div>
+  <h3>M-Pesa</h3>
+  <p class="donate-description">
+    You can also support Kenya One through M-Pesa using the number below.
+  </p>
+
+  <div class="donate-detail-box">
+    <span class="donate-detail-label">M-Pesa Number</span>
+    <p id="mpesaNumber">+254 700000000</p>
+  </div>
+
+  <div class="donate-card-actions">
+    <a href="https://wa.me/254700000000" target="_blank" class="donate-action-btn">Confirm Payment</a>
+    <button class="copy-btn" data-copy="+254700000000">Copy</button>
+  </div>
+</article>
+      </div>
+
+      <div class="donate-note-box">
+        <h3>Your support makes this possible</h3>
+        <p>
+          Donations help provide school support, food outreach, mentorship sessions,
+          prayer, and community care for children and families in need.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container footer-content">
+
+    <p>&copy; 2026 Kenya One</p>
+
+    <p class="footer-note">
+      Empowering Education. Building Confidence. Transforming Communities.
+    </p>
+
+    <p class="footer-note">
+      “Every act of compassion brings us closer to a stronger and more united Kenya,
+      where every child has a chance to learn, grow, and succeed.”
+    </p>
+
+    <div class="footer-social">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/254700000000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+  </div>
+</footer>
+
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+
+      document.querySelectorAll("#navLinks a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("show");
+        });
+      });
+    }
+
+    const copyButtons = document.querySelectorAll(".copy-btn");
+
+    copyButtons.forEach((button) => {
+      button.addEventListener("click", async () => {
+        const text = button.getAttribute("data-copy");
+
+        try {
+          await navigator.clipboard.writeText(text);
+          const original = button.textContent;
+          button.textContent = "Copied!";
+          setTimeout(() => {
+            button.textContent = original;
+          }, 1500);
+        } catch (error) {
+          button.textContent = "Copy failed";
+          setTimeout(() => {
+            button.textContent = "Copy";
+          }, 1500);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
